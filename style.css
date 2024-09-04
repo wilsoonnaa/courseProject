@@ -1,0 +1,48 @@
+/*Variables*/
+:root {
+    /*Colors*/
+    --color-bg: #111121;
+    --color-nav: #0A0A1B;
+    --color-primary: #00FFD1;
+    --color-white: #fff;
+    --color-blue: #103FE7;
+    --color-green: #11201D;
+    --color-article: #141338;
+}
+
+/*Clearing styles*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'ProtoMono';
+    src: url('/fonts/ProtoMono-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('fonts/IBMPlexMono.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('fonts/IBMPlexMono-Italic.ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('fonts/IBMPlexMono-Bold.ttf');
+    font-weight: bold;
+}
