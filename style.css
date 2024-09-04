@@ -3,6 +3,7 @@
     /*Colors*/
     --color-bg: #111121;
     --color-nav: #0A0A1B;
+    --color-nav-tr: rgb(10, 10, 27, 0.8);
     --color-primary: #00FFD1;
     --color-white: #fff;
     --color-blue: #103FE7;
@@ -90,4 +91,66 @@ small{
     font-family: 'IBMPlexMono';
     src: url('fonts/IBMPlexMono-Bold.ttf');
     font-weight: bold;
+}
+
+nav{
+    background-color: var(--color-nav);
+    font-family: 'IBMPlexMono', sans-serif;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    color: var(--color-white);
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover{
+    background-color: var(--color-green);
+}
+
+nav a:active{
+    color: var(--color-primary);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+/*Mobile navbar*/
+.nv-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--color-nav-tr);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.nv-sidebar li{
+    width: 100%;
+}
+
+.nv-sidebar a{
+    width: 100%;
 }
