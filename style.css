@@ -8,17 +8,62 @@
     --color-blue: #103FE7;
     --color-green: #11201D;
     --color-article: #141338;
+
+    /*Font sizes*/
+    --fs-h1: 3.815rem;
+    --fs-h2: 3.05rem;
+    --fs-h3: 2.44rem;
+    --fs-h4: 1.95rem;
+    --fs-h5: 1.56rem;
+    --fs-h6: 1.25rem;
+    --fs-p: 1rem;
+    --fs-sm: 0.8rem;
 }
 
 /*Clearing styles*/
-
 *{
     margin: 0;
     padding: 0;
 }
 
+html{
+    font-size: 16px; /*Base rem*/
+}
+
 body{
     min-height: 100vh;
+}
+
+h1{
+    font-size: var(--fs-h1);
+}
+
+h2{
+    font-size: var(--fs-h2);
+}
+
+h3{
+    font-size: var(--fs-h3);
+}
+
+h4{
+    font-size: var(--fs-h4);
+}
+
+h5{
+    font-size: var(--fs-h5);
+}
+
+h6{
+    font-size: var(--fs-h6);
+}
+
+p{
+    font-size: var(--fs-p);
+}
+
+small{
+    font-size: var(--fs-sm);
 }
 
 /*Fonts*/
