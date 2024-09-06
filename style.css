@@ -31,8 +31,9 @@ html{
     font-size: 16px; /*Base rem*/
 }
 
-body{
-    min-height: 100vh;
+html, body{
+    margin: 0;
+    height: 100%;
 }
 
 h1{
@@ -93,7 +94,14 @@ small{
     font-weight: bold;
 }
 
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 nav{
+    
     background-color: var(--color-nav);
     font-family: 'IBMPlexMono', sans-serif;
 }
@@ -129,6 +137,40 @@ nav a:active{
 
 nav li:first-child{
     margin-right: auto;
+    a {
+        color: var(--color-primary);
+    }
+    a:hover{
+        background-color: transparent;
+    }
+    
+}
+
+.nv-content{
+    /*padding: 0 122px;*/
+}
+
+#dt-logo{
+    font-family: 'ProtoMono', 'IBMPlexMono', sans-serif;
+    color: var(--color-primary);
+    font-size: var(--fs-h3);
+}
+
+.acc-icon{
+    max-width: var(--fs-h4);
+    height: auto;
+}
+
+/*Content container*/
+main{
+    flex: 1;
+    overflow: auto;
+    background-color: var(--color-bg);
+}
+
+/*Footer*/
+footer{
+    background-color: var(--color-nav);
 }
 
 /*Mobile navbar*/
@@ -153,4 +195,24 @@ nav li:first-child{
 
 .nv-sidebar a{
     width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+/*Hide on mobile devices*/
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .nv-sidebar{
+        width: 100%;
+    }
 }
