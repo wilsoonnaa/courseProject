@@ -192,6 +192,22 @@ main{
     flex-direction: column;
 }
 
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+  }
+
+  .border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
+
+  .only-bottom {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+
 .blocks{
     display: flex;
     flex-direction: row;
@@ -211,6 +227,7 @@ main{
     text-align: justify;
     overflow-x: hidden;
     overflow-y: scroll;
+    scrollbar-color: var(--color-primary);
 }
 
 .article{
@@ -270,7 +287,7 @@ main{
 .sidebar{
     display: flex;
     flex-direction: column;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
     width: 30%;
     min-width: 200px;
     gap: 1rem;
@@ -286,6 +303,36 @@ main{
     align-items: center;
     padding: 0 10px;
     justify-content: space-between;
+}
+
+.sb-hot{
+    gap: 1rem;
+    padding: 0.8rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    border-radius: 20px;
+    background-color: var(--color-blue);
+}
+
+.sb-hot-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-family: 'ProtoMono';
+    font-size: var(--fs-h4);
+    img{
+        max-height: var(--fs-h3);
+        width: auto;
+    }
+}
+
+.sb-wiki{
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    
 }
 
 .wiki-title{
@@ -308,11 +355,17 @@ main{
     }
 }
 
-.sb-wiki{
+.wiki-blocks{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.wiki-block{
+    border-radius: 50px;
     width: 100%;
-    border: 1px solid var(--color-primary);
-    border-radius: 20px;
-    
+    min-height: 100px;
+    background-color: var(--color-primary);
 }
 
 /*Footer*/
