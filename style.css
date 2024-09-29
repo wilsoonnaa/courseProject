@@ -35,6 +35,8 @@ html{
 html, body{
     margin: 0;
     height: 100%;
+    font-family: 'ProtoMono';
+    color: white;
 }
 
 h1{
@@ -269,6 +271,75 @@ main{
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.landing-main{
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.landing-main-left{
+    width: 70%;
+    h5{
+        margin-top: 3rem;
+        font-family: 'ProtoMono';
+        background: rgb(232,190,121);
+background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 50%, rgba(121,96,219,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: normal;
+    }
+}
+
+.landing-main-right{
+    width: 30%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.landing-points{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+    color: var(--color-primary);
+
+    span{
+        font-size: var(--fs-h6);
+    }
+}
+
+.landing-reg{
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.reg-text{
+    span{
+        font-size: var(--fs-h5);
+        background: rgb(232,190,121);
+background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 50%, rgba(121,96,219,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .border-gradient {
@@ -570,6 +641,7 @@ main{
 
 /*Footer*/
 footer{
+    margin: auto 0;
     padding: 2rem 0;
     width: 100%;
     height: auto;
