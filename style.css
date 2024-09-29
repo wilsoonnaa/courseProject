@@ -372,6 +372,7 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
     display: flex;
     flex-direction: column;
     gap: 18px;
+    padding-bottom: 18px;
     max-height: 700px;
     min-width: 500px;
     width: 70%;
@@ -485,7 +486,7 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
 }
 
 .sb-hot{
-    padding: 0.8rem 0.8rem;
+    padding: 0.8rem 1rem;
     display: flex;
     flex-direction: column;
     min-height: 100px;
@@ -684,8 +685,8 @@ footer{
 
 .social-icons{
     gap: 0.4rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -705,8 +706,8 @@ footer{
     /*border: 1px solid green;*/
 
     ul{
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
+        padding-top: 2rem;
+        padding-left: 3rem;
         list-style-type: none;
 
         li{
@@ -732,7 +733,7 @@ footer{
     
     span{
         font-size: var(--fs-sm);
-        padding-right: 1.5rem;
+        padding-right: 3rem;
     }
 }
 
