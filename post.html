@@ -32,53 +32,26 @@
             <main>
                 <div class="content">
                     <div class="info">
-                        <h1>WIKI</h1>
+                        <h1>WRITE A POST</h1>
                     </div>
                     <div class="blocks">
-                        <div class="article2">
-                            <section class="accordion">
-                                <div class="tab">
-                                  <input type="checkbox" name="accordion-1" id="cb2">
-                                  <label for="cb2" class="tab__label">Animation</label>
-                                  <div class="tab__content">
-                                    <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
-                                  </div>
+                        <div class="article2 border-gradient border-gradient-purple only-bottom">
+                                <form id="articleForm" enctype="multipart/form-data">
+                                    <input type="text" id="articleTitle" name="articleTitle" placeholder="Article Name" required>
+                                <br>
+                                <div id="inputArea">
+                                    <textarea id="articleDescription" name="articleDescription" rows="3" maxlength="300" placeholder="Write the article description here:" required></textarea>
+                                <br>
+                                    <textarea id="articleText" name="articleText" rows="20" placeholder="Write the text for your post here!" required></textarea>
+                                <br>
+                                    <input type="file" id="articleThumbnail" name="articleThumbnail" accept="image/*" required>
+                                <br>
+                                <button type="submit">Submit Article</button>
                                 </div>
-                                <div class="tab">
-                                    <input type="checkbox" name="accordion-1" id="cb3">
-                                    <label for="cb3" class="tab__label">Modeling</label>
-                                    <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
-                                    </div>
-                                  </div>
-                                  <div class="tab">
-                                    <input type="checkbox" name="accordion-1" id="cb4">
-                                    <label for="cb4" class="tab__label">Character Art</label>
-                                    <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
-                                    </div>
-                                  </div>
-                                  <div class="tab">
-                                    <input type="checkbox" name="accordion-1" id="cb5">
-                                    <label for="cb5" class="tab__label">Environment Art</label>
-                                    <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
-                                    </div>
-                                  </div>
-                                  <div class="tab">
-                                    <input type="checkbox" name="accordion-1" id="cb6">
-                                    <label for="cb6" class="tab__label">Graphics Programming</label>
-                                    <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
-                                    </div>
-                                  </div>
-                            </section>
+                                </form>
                         </div>
+                        
                         <div class="sidebar hideOnMobile">
-                            <div class="sb-post">
-                                <span>POST</span>
-                                <img src="svg/Create.svg" alt="Post button">
-                            </div>
                             <div class="sb-hot">
                                 <div class="sb-hot-title">
                                     <span>Hot n' fresh</span>
@@ -123,9 +96,9 @@
                                     </div>
                                 </div>
                                 <div class="sb-hot-more">
-                                    <div class="sb-hot-button">
-                                        <a href="index.html">MORE</a>
-                                    </div>
+                                        <div class="sb-hot-button">
+                                            <a href="index.html">MORE</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +134,7 @@
                         <div class="ft-right-box">
                             <span>SUBSCRIBE<br>TO<br>OUR<br>NEWSLETTER</span>
                             <input type="email" id="email" pattern=".+@example\.com" placeholder="Enter your email" required />
-                            <button id="emailsub" type="submit">Subscribe</button>
+                            <button type="submit">Subscribe</button>
                         </div>
                     </div>
                 </div>

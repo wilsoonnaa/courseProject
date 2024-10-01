@@ -269,7 +269,6 @@ main{
     /*border: 1px solid yellow;*/
     margin: 0 122px;
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -360,6 +359,116 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
     border-top: 0;
   }
 
+.articleForm{
+}
+
+#articleForm input#articleTitle{
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    font-size: var(--fs-h6);
+    padding: 0.5em 1rem;
+    background: none;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-family: 'IBMPlexMono', sans-serif;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#articleForm textarea{
+    width: 100%;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#articleForm button{
+    border-radius: 50px;
+    padding: 1rem;
+    border: none;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    font-family: 'ProtoMono', 'IBMPlexMono', sans-serif;
+}
+
+#articleForm textarea#articleDescription{
+    /*border: 1px solid var(--color-primary);*/
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color:var(--color-article);
+    font-family: 'IBMPlexMono', sans-serif;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+#articleForm textarea#articleText{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color:var(--color-article);
+    font-family: 'IBMPlexMono', sans-serif;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+  #articleThumbnail {
+    font-family: 'IBMPlexMono', sans-serif;
+    background-color:  rgba(177,0,255,1);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+    width: 35%;
+    min-width: 105px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  input::file-selector-button{
+    border-radius: 20px;
+    border: none;
+    font-family: 'IBMPlexMono', sans-serif;
+    padding: 0.3rem 0.8rem;
+    margin-right: 1rem;
+    background-color: var(--color-article);
+    color: var(--color-primary);
+  }
+
+#inputArea{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--color-blue);
+    border-radius: 20px;
+    background: rgb(41,37,187);
+    background: linear-gradient(90deg, rgba(41,37,187,1) 0%, rgba(16,63,231,1) 39%, rgba(31,26,144,1) 100%); 
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .blocks{
     display: flex;
     flex-direction: row;
@@ -381,6 +490,17 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: var(--color-primary);
+}
+
+.article2{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 1rem;
+    max-height: 900px;
+    min-width: 500px;
+    width: 70%;
 }
 
 .articles:last-child{
@@ -632,13 +752,13 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
 .wiki-blocks{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: auto;
 }
 
 .wiki-block{
     border-radius: 50px;
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     background-color: var(--color-primary);
 }
 
@@ -939,11 +1059,16 @@ footer{
         width: 100%;
     }
 
-    .post-text{
-        p{
-            font-size: var(--fs-sm);
+        label{
+            span{
+                color: var(--color-primary);
+            }
         }
+
+    .row{
+        margin-bottom: 1rem;
     }
+
     h1{
         font-size: var(--fs-h4);
     }
@@ -956,6 +1081,11 @@ footer{
     }
     .articles{
         align-items: center;
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .article2{
         min-width: 300px;
         width: 100%;
     }
@@ -976,6 +1106,8 @@ footer{
             width: 80%;
         }
     }
+
+    
 
     .hideOnMobile{
         display: none;
@@ -1091,6 +1223,8 @@ footer{
         min-width: 200px;
     }
 
+    .article2{min-width: 200px;}
+
     .article-info{
         
         font-size: var(--fs-sm);
@@ -1129,3 +1263,86 @@ footer{
         }
     }
 }
+
+/*Accordion*/
+.faq-text{
+    border: 1px solid rgb(163, 43, 159);
+    border-radius: 20px;
+
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'IBMPlexMono';
+    h6{
+        font-weight: normal;
+    }
+}
+/* Core styles/functionality */
+.tab {
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    margin-bottom: 1rem;
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+  }
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: 10rem;
+  }
+  
+  /* Visual styles */
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: black;
+    cursor: pointer;
+  }
+  .tab__label {
+    font-size: var(--fs-h5);
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+  }
+  .tab__content p {
+    font-family: 'IBMPlexMono', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+  /* Arrow animation */
+  .tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
+  }
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
+  }
