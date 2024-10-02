@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +13,16 @@
 </head>
 <body>
     <div id="container">
-        <nav>
-            <div class="nv-content">
-                <ul class="nv-sidebar">
-                    <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#">Post</a></li>
-                    <li><a href="#">Wiki</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Account</a></li>
-                </ul>
-                <ul>
-                    <li id="dt-logo" class="first"><a href="index.html" id="dt-logo">SCAR3D</a></li>
-                    <li class="hideOnMobile nav-pd"><a href="index">Trending</a></li>
-                    <li class="hideOnMobile"><a href="wiki.html">Wiki</a></li>
-                    <li class="hideOnMobile last"><a href="#"><img class="acc-icon" src="svg/Account.svg" alt="Account Icon"></a></li>
-                    <li class="menu-button last" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </div>
-        </nav>
+    <?php include 'navbar.php'; ?>
     
         <div class="scnd-container">
             <main>
                 <div class="content">
                     <div class="info">
-                        <h1>Contacts & FAQ</h1>
+                        <h1>WIKI</h1>
                     </div>
                     <div class="blocks">
                         <div class="article2">
-                            
                             <section class="accordion">
                                 <div class="tab">
                                   <input type="checkbox" name="accordion-1" id="cb2">
@@ -56,7 +42,33 @@
                                     <input type="checkbox" name="accordion-1" id="cb4">
                                     <label for="cb4" class="tab__label">Character Art</label>
                                     <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                        <p>Characters for games are usually created as a group effort, involving an Art Director, Concept Artists, Character Artists, Technical Artists, Animators, and Effects Artists (usually in this order). The number of artists depends on the size of the art team: the team can be tens of people, or sometimes it is all accomplished by one person.<br><br>
+
+                                            Characters are first designed as concepts, sculpted to create form and details, re-topology modeled for in-game use, textured and shaded to create color and surface materials, rigged to a skeleton, animated to move and act, and special effects are added.<br><br>
+                                            
+                                            Concept art is almost always used as the starting point because it's a more loose, fast, and efficient way to iterate and find the best character design than using 3D.<br><br>
+                                            
+                                            For most modern game characters, a high poly model is first created using a combination of modeling and digital sculpting software. These high resolution models are later re-topologized into the game resolution or low poly model.<br><br>
+                                            
+                                            The surface details from the high poly model are transferred to the in-game model using textures and Shaders though a process called baking. This baking process can generate a variety of texture maps that help fool the eye into believing the in-game model has more modeled detail than it actually has. The most common of these texture maps are Normal map, and AmbientOcclusionMap.<br><br>
+                                            
+                                            Typical character art process:<br><br>
+                                            
+                                            1. Build a blockout model.<br>
+                                            2. Do a rough sculpt.<br>
+                                            3. Do a final sculpt.<br>
+                                            4. Polypaint.<br>
+                                            5. Retopo to create the final low-poly model.<br>
+                                            6. Unwrap the UVs.<br>
+                                            7. Set up an exploded bake if needed.<br>
+                                            8. If the engine is poorly synced, need to rely on convoluted smoothing groups techniques to compensate.<br>
+                                            9. If the budget is too tight, need to rely on painful edited cage setups.<br>
+                                            10. Bake it, meaning that one has to know about a whole lot of different texture passes.<br>
+                                            11. OS to TS conversion in some cases.<br>
+                                            12. Set up a master PSD file with all the texture passes as groups.<br>
+                                            13. Use the QuickSaveMaps script for Photoshop to save all maps at once.<br>
+                                            14. Texturing (either in Photoshop only, or using 3DCoat or Substance Painter, or using DDO or Substance Designer), in PBR fashion or not.<br>
+                                            15. Export and refine in-engine or Marmoset.</p>
                                     </div>
                                   </div>
                                   <div class="tab">
@@ -134,39 +146,7 @@
                 </div>
             </main>
         
-            <footer>
-                <div class="ft-container">
-                    <div class="ft-left">
-                        <div class="ft-left-up">
-                            <div class="ft-left-links">
-                                <ul>
-                                    <li><a href="#">CONTACTS & FAQ</a></li>
-                                    <li><a href="#">PRIVACY POLICY</a></li>
-                                    <li><a href="#">ACCOUNT SETTINGS</a></li>
-                                    <li><a href="#">POST</a></li>
-                                    <li><a href="#">WIKI</a></li>
-                                </ul>
-                            </div>
-                            <div class="ft-left-icons">
-                                <div class="social-icons">
-                                    <img src="images/Emailicon.png" alt="Email icon">
-                                    <img src="images/GitHub (1).png" alt="Github icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ft-left-down">
-                            <span>COPYRIGHT ALEX WILSON<br>SCARED OF 3D.NET 2024</span>
-                        </div>
-                    </div>
-                    <div class="ft-right">
-                        <div class="ft-right-box">
-                            <span>SUBSCRIBE<br>TO<br>OUR<br>NEWSLETTER</span>
-                            <input type="email" id="email" pattern=".+@example\.com" placeholder="Enter your email" required />
-                            <button id="emailsub" type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <?php include 'footer.php'; ?>
         </div>
     
     </div>

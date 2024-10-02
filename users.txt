@@ -1,0 +1,2 @@
+test:test@mail.ru:$2y$10$cY6trRlIPypNpw8UVS1Js.JWX2DjNMbB4.RnYkKDvRjJHd4j5fX8y
+hello:hello@mail.ru:$2y$10$APWE0byqMl29oNOi0Is8muWxFF1HMyoflMCeLKdWJPd2lPvEX4G9u

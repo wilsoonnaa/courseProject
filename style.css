@@ -116,6 +116,18 @@ small{
     margin-bottom: 1rem;
 }
 
+.info2{
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    
+}
+
+.centercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .subinfo{
     margin-top: 1rem;
     color: var(--color-white);
@@ -362,6 +374,57 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
 .articleForm{
 }
 
+.passwordForm{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.passwordForm input{
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: var(--fs-p);
+    padding: 1rem;
+    border-radius: 50px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-article);
+    color: var(--color-primary);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.passwordForm button{
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    padding: 1rem;
+    border: none;
+    justify-self: center;
+    font-family: 'ProtoMono', 'IBMPlexMono', sans-serif;
+    margin-bottom: 2rem;
+    font-size: var(--fs-p);
+}
+
+.passwordForm button:active{
+    background-color: black;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.passwordForm div{
+    margin-bottom: 2rem;
+}
+
+.passwordForm label{
+    font-family: 'ProtoMono', 'IBMPlexMono', sans-serif;
+    font-size: var(--fs-h5);
+    color: var(--color-primary);
+}
+
 #articleForm input#articleTitle{
     width: 100%;
     border: 1px solid var(--color-primary);
@@ -370,7 +433,7 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
     padding: 0.5em 1rem;
     background: none;
     color: var(--color-primary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.128rem;
     font-family: 'IBMPlexMono', sans-serif;
 
     -webkit-box-sizing: border-box;
@@ -397,6 +460,11 @@ background: linear-gradient(90deg, rgba(232,190,121,1) 0%, rgba(218,132,129,1) 5
     color: var(--color-primary);
     background-color: var(--color-bg);
     font-family: 'ProtoMono', 'IBMPlexMono', sans-serif;
+}
+
+#articleForm button:active{
+    background-color: var(--color-primary);
+    color: black;
 }
 
 #articleForm textarea#articleDescription{
@@ -498,9 +566,25 @@ input[type="file"] {
     flex-direction: column;
     gap: 18px;
     padding-bottom: 1rem;
-    max-height: 900px;
     min-width: 500px;
     width: 70%;
+}
+
+
+.article3{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 1rem;
+    min-width: 500px;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .article3{
+        min-width: 250px;
+    }
 }
 
 .articles:last-child{
@@ -1293,7 +1377,7 @@ footer{
     transition: all 0.35s;
   }
   .tab input:checked ~ .tab__content {
-    max-height: 10rem;
+    max-height: 100rem;
   }
   
   /* Visual styles */
@@ -1325,6 +1409,17 @@ footer{
     margin: 0;
     padding: 0 2rem 2rem 2rem;
   }
+  .tab__content li {
+    font-family: 'IBMPlexMono', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .tab__content ol{
+    margin-bottom: 2rem;
+  }
+
   .tab__close {
     justify-content: flex-end;
     padding: 0.5rem 1rem;

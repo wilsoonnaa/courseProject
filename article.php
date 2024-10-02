@@ -20,8 +20,10 @@
                 </ul>
                 <ul>
                     <li id="dt-logo" class="first"><a href="index.html" id="dt-logo">SCAR3D</a></li>
-                    <li class="hideOnMobile nav-pd"><a href="index">Trending</a></li>
+                    <li class="hideOnMobile nav-pd"><a href="index.html">Trending</a></li>
                     <li class="hideOnMobile"><a href="wiki.html">Wiki</a></li>
+                    <li class="hideOnMobile"><a href="contacts.html">FAQ</a></li>
+                    <li class="hideOnMobile"><a href="post.html">Post</a></li>
                     <li class="hideOnMobile last"><a href="#"><img class="acc-icon" src="svg/Account.svg" alt="Account Icon"></a></li>
                     <li class="menu-button last" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
@@ -32,25 +34,38 @@
             <main>
                 <div class="content">
                     <div class="info">
-                        <h1>WRITE A POST</h1>
+                    
+                        <h1>No Longer Human</h1>
+                        <div class="subinfo">
+                            <div class="subinfoauthor">
+                                <h6>Alexander Wilson</h6>
+                            </div>
+                            <div class="subinfodate">
+                                <h6>06/06/2024</h6>
+                            </div>
+                        </div>
                     </div>
                     <div class="blocks">
-                        <div class="article2 border-gradient border-gradient-purple only-bottom">
-                                <form id="articleForm" enctype="multipart/form-data">
-                                    <input type="text" id="articleTitle" name="articleTitle" placeholder="Article Name" required>
-                                <br>
-                                <div id="inputArea">
-                                    <textarea id="articleDescription" name="articleDescription" rows="3" maxlength="300" placeholder="Write the article description here:" required></textarea>
-                                <br>
-                                    <textarea id="articleText" name="articleText" rows="20" placeholder="Write the text for your post here!" required></textarea>
-                                <br>
-                                    <input type="file" id="articleThumbnail" name="articleThumbnail" accept="image/*" required>
-                                <br>
-                                <button type="submit">Submit Article</button>
+                        <div class="post-parent">
+                            <div class="post-content">
+                                <div class="thumbnail"><img src="images/nolongerhuman.jpg" alt="Post thumbnail"></div>
+                                <div class="post-text border-gradient border-gradient-purple only-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    </p>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    </p>
                                 </div>
-                                </form>
+                                <div class="post-share">
+                                    <a href="#">SHARE THIS ARTICLE</a>
+                                </div>
+                            </div>
                         </div>
-                        
                         <div class="sidebar hideOnMobile">
                             <div class="sb-hot">
                                 <div class="sb-hot-title">
@@ -96,9 +111,9 @@
                                     </div>
                                 </div>
                                 <div class="sb-hot-more">
-                                        <div class="sb-hot-button">
-                                            <a href="index.html">MORE</a>
-                                        </div>
+                                    <div class="sb-hot-button">
+                                        <a href="index.html">MORE</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -112,17 +127,17 @@
                         <div class="ft-left-up">
                             <div class="ft-left-links">
                                 <ul>
-                                    <li><a href="#">CONTACTS & FAQ</a></li>
+                                    <li><a href="contacts.html">CONTACTS & FAQ</a></li>
                                     <li><a href="#">PRIVACY POLICY</a></li>
                                     <li><a href="#">ACCOUNT SETTINGS</a></li>
-                                    <li><a href="#">POST</a></li>
-                                    <li><a href="#">WIKI</a></li>
+                                    <li><a href="post.html">POST</a></li>
+                                    <li><a href="wiki.html">WIKI</a></li>
                                 </ul>
                             </div>
                             <div class="ft-left-icons">
                                 <div class="social-icons">
                                     <img src="images/Emailicon.png" alt="Email icon">
-                                    <img src="images/GitHub (1).png" alt="Github icon">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/wilsoonnaa/courseProject"><img src="images/GitHub (1).png" alt="Github icon"></a>
                                 </div>
                             </div>
                         </div>

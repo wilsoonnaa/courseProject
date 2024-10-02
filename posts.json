@@ -1,0 +1,29 @@
+[
+    {
+        "id": "post_1",
+        "title": "First Post",
+        "description": "This is the first post",
+        "content": "Content of the first post...",
+        "author": "John Doe",
+        "timestamp": "2024-10-01 12:00:00",
+        "thumbnail": "nolongerhuman.jpg"
+    },
+    {
+        "id": "post_2",
+        "title": "Second Post",
+        "description": "This is the second post",
+        "content": "Content of the second post...",
+        "author": "Jane Smith",
+        "timestamp": "2024-10-02 14:30:00",
+        "thumbnail": "nolonger.png"
+    },
+    {
+        "id": "post_3",
+        "title": "hello",
+        "description": "hello",
+        "content": "hello",
+        "author": "test",
+        "thumbnail": "66fd9307b9071.png",
+        "timestamp": "2024-10-02 18:37:59"
+    }
+]

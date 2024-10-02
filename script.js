@@ -12,3 +12,5 @@ function closeSidebar(){
 document.getElementById("emailsub").addEventListener("click", function() {
     alert("Successfully subscribed to newsletter!");
   });
+
+  
