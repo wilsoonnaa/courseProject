@@ -14,7 +14,7 @@ $current_user = $logged_in ? $_SESSION['user_id'] : null;
 <ul class="nv-sidebar">
 <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 <li><?php if ($logged_in): ?>
-    <a href="logout.php">Logout ()</a>
+    <a href="logout.php">Logout (<?php echo htmlspecialchars($current_user); ?>)</a>
 <?php else: ?>
     <a href="login.php">Login</a>
 <?php endif; ?></li>

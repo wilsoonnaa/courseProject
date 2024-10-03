@@ -110,6 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <span>/ <a href="post.php">Post</a> /</span>
                         </div>
                         <h1>WRITE A POST</h1>
+                        <small>Logged in as: <?php echo htmlspecialchars($current_user); ?></small>
                     </div>
                     <div class="blocks">
                         <div class="article2 border-gradient border-gradient-purple only-bottom">

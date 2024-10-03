@@ -24,3 +24,4 @@ document.getElementById("emailsub").addEventListener("click", function() {
 function subscribeAlert() {
     alert("Subscribed to newsletter");
 }
+

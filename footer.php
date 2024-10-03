@@ -4,10 +4,10 @@
                         <div class="ft-left-up">
                             <div class="ft-left-links">
                                 <ul>
-                                    <li><a href="contacts.php">CONTACTS & FAQ</a></li>
                                     <li><a href="index.php">TRENDING</a></li>
                                     <li><a href="post.php">POST</a></li>
                                     <li><a href="wiki.php">WIKI</a></li>
+                                    <li><a href="contacts.php">CONTACTS & FAQ</a></li>
                                     <li><a href="forgot.php">FORGOT PASSWORD?</a></li>
                                 </ul>
                             </div>

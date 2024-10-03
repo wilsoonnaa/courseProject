@@ -4,3 +4,4 @@ Alexander Wilson:alex@mail.ru:$2y$10$1nxL13iCGaZlo7fLXTaxpeMY7f2klVR.THFgROICrP8
 alex:test@mail.ru:$2y$10$GbsZsYMhpyLAOnBMraOV7.kaKLuP2qF76/W22fJDZdIUnGNucpmqS
 Alexander Wilson:helpme@mail.ru:$2y$10$Xp8O7n0XXXrP5jDi1hvqKOSMo5Q2WQ8YysRkQhY4WjTMsYJvcrT4u
 oleg:oleg@mail.ru:$2y$10$sB2v2wwSKOZU42ylN4nSiOS6INES84ijNzX4JI2PHJkpW.uAhcZMW
+Misha:misha@mail.ru:$2y$10$oHBxjGz3V2KuzWg32/hqiuuKOOvdsUoSX8gvblT3IN9qjIVNC5ft.

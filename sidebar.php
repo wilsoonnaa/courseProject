@@ -1,8 +1,15 @@
+<?php
+$defaultIcon = 'svg/Create.svg';
+$hoverIcon = 'svg/Create2.svg';
+?>
+
 <div class="sidebar hideOnMobile">
+                            <a href="post.php">
                             <div class="sb-post">
                                 <span>POST</span>
-                                <img src="svg/Create.svg" alt="Post button">
+                                <img src="<?php echo $defaultIcon; ?>" alt="Icon" data-default="<?php echo $defaultIcon; ?>" data-hover="<?php echo $hoverIcon; ?>">
                             </div>
+                            </a>
                             <div class="sb-hot">
                                 <div class="sb-hot-title">
                                     <span>Hot n' fresh</span>
@@ -77,3 +84,18 @@
                                 </div>
                             </div>
                         </div>
+
+                        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var post = document.querySelector('.sb-post');
+    var img = post.querySelector('img');
+    
+    post.addEventListener('mouseover', function() {
+        img.src = img.dataset.hover;
+    });
+    
+    post.addEventListener('mouseout', function() {
+        img.src = img.dataset.default;
+    });
+});
+</script>
