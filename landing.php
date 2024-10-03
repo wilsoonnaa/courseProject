@@ -30,18 +30,22 @@ session_start();
                         </div>
                         <div class="landing-points">
                             <div class="bullet">
-                                <span>NO READING LIMIT</span>
+                            <img src="svg/check.svg" alt="Check symbol">
+                                <span>Articles posted daily</span>
                             </div>
                             <div class="bullet">
-                                <span>ARTICLES FROM INDUSTRY PROFESSIONALS</span>
+                            <img src="svg/check.svg" alt="Check symbol">
+                                <span>Resources to learn</span>
                             </div>
                             <div class="bullet">
+                            <img src="svg/check.svg" alt="Check symbol">
                                 <span>ONLY EMAIL REQUIRED</span>
                             </div>
                         </div>
                         <div class="landing-reg">
+                            <a class="noDisplay" href="contacts.php">Learn more!</a>
                             <div class="reg-text">
-                                <span>REGISTER NOW</span>
+                                <a href="signup.php"><div class="reg-button">REGISTER NOW</div></a>
                             </div>
                         </div>
                     </div>

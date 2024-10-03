@@ -19,6 +19,9 @@ session_start();
             <main>
                 <div class="content">
                     <div class="info">
+                    <div class="breadcrumbs">
+                            <span>/ <a href="">Contacts & Faq</a> /</span>
+                        </div>
                         <h1>Contacts & FAQ</h1>
                     </div>
                     <div class="blocks">
@@ -27,96 +30,44 @@ session_start();
                             <section class="accordion">
                                 <div class="tab">
                                   <input type="checkbox" name="accordion-1" id="cb2">
-                                  <label for="cb2" class="tab__label">Animation</label>
+                                  <label for="cb2" class="tab__label">WHAT IS SCAR3D.NET?</label>
                                   <div class="tab__content">
-                                    <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                    <p>SCAR3D's goal is to empower artists and game developers to share blog posts about various game ideas, art concepts, techniques and more!</p>
+                                    <p>Based on oldschool 3D forums, we seek to become a knowledge base for professionals and hobbyists alike who prefer a feed catered to their artistic tastes.</p>
                                   </div>
                                 </div>
                                 <div class="tab">
                                     <input type="checkbox" name="accordion-1" id="cb3">
-                                    <label for="cb3" class="tab__label">Modeling</label>
+                                    <label for="cb3" class="tab__label">How can I post?</label>
                                     <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                      <p>Anyone with an account can post as many times as they want! You can <a href="signup.php">sign up here.</a></p>
                                     </div>
                                   </div>
                                   <div class="tab">
                                     <input type="checkbox" name="accordion-1" id="cb4">
-                                    <label for="cb4" class="tab__label">Character Art</label>
+                                    <label for="cb4" class="tab__label">How can I learn game art?</label>
                                     <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                      <p>Our wiki is constantly updated with the best resources for learning on every category of game art. <a href="wiki.php">Check it out here.</a></p>
                                     </div>
                                   </div>
                                   <div class="tab">
                                     <input type="checkbox" name="accordion-1" id="cb5">
-                                    <label for="cb5" class="tab__label">Environment Art</label>
+                                    <label for="cb5" class="tab__label">I forgot my password</label>
                                     <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                      <p>No worries! Simply head over to the <a href="forgot.php">password recovery page.</a></p>
                                     </div>
                                   </div>
                                   <div class="tab">
                                     <input type="checkbox" name="accordion-1" id="cb6">
-                                    <label for="cb6" class="tab__label">Graphics Programming</label>
+                                    <label for="cb6" class="tab__label">Contacts</label>
                                     <div class="tab__content">
-                                      <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                      <p>For questions about the site or any other business inquiries, please email: <a href="mailto:avorobiovwilson@gmail.com">avorobiovwilson@gmail.com</a></p>
+                                      <p>You can view the website's source code on <a href="https://github.com/wilsoonnaa/courseProject">Github.</a></p>
                                     </div>
                                   </div>
                             </section>
                         </div>
-                        <div class="sidebar hideOnMobile">
-                            <div class="sb-post">
-                                <span>POST</span>
-                                <img src="svg/Create.svg" alt="Post button">
-                            </div>
-                            <div class="sb-hot">
-                                <div class="sb-hot-title">
-                                    <span>Hot n' fresh</span>
-                                    <img src="svg/Fire.svg" alt="Fire Symbol">
-                                </div>
-                                <div class="sb-hot-articles">
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sb-hot-more">
-                                    <div class="sb-hot-button">
-                                        <a href="index.html">MORE</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include 'sidebar.php'; ?>
                     </div>
                 </div>
             </main>

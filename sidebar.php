@@ -1,10 +1,15 @@
-<div class="sb-hot">
+<div class="sidebar hideOnMobile">
+                            <div class="sb-post">
+                                <span>POST</span>
+                                <img src="svg/Create.svg" alt="Post button">
+                            </div>
+                            <div class="sb-hot">
                                 <div class="sb-hot-title">
                                     <span>Hot n' fresh</span>
                                     <img src="svg/Fire.svg" alt="Fire Symbol">
                                 </div>
                                 <div class="sb-hot-articles">
-                                    <div class="sb-hot-article">
+                                <div class="sb-hot-article">
                                         
                                         <div class="sb-hot-article-content">
                                             <a href="article.php">
@@ -71,3 +76,4 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>

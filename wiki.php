@@ -19,6 +19,9 @@ session_start();
             <main>
                 <div class="content">
                     <div class="info">
+                    <div class="breadcrumbs">
+                            <span>/ <a href="wiki.php">WIKI</a> /</span>
+                        </div>
                         <h1>WIKI</h1>
                     </div>
                     <div class="blocks">
@@ -28,7 +31,9 @@ session_start();
                                   <input type="checkbox" name="accordion-1" id="cb2">
                                   <label for="cb2" class="tab__label">Animation</label>
                                   <div class="tab__content">
-                                    <p>Using <code>&lt;input type="checkbox"&gt;</code> allows to have several tabs open at the same time.</p>
+                                  <p>
+                                  What are the steps to&nbsp;completing a&nbsp;successful animation? Obviously, it&nbsp;takes a&nbsp;lot of&nbsp;time, skill, planning, and plain expertise. The animation pipeline is&nbsp;a&nbsp;detailed game plan for your project. When considering the &lsquo;animation pipeline&rsquo;, you should have a&nbsp;good idea as&nbsp;to&nbsp;what step of&nbsp;your project you&rsquo;re on.
+                                  </p>
                                   </div>
                                 </div>
                                 <div class="tab">
@@ -87,61 +92,7 @@ session_start();
                                   </div>
                             </section>
                         </div>
-                        <div class="sidebar hideOnMobile">
-                            <div class="sb-post">
-                                <span>POST</span>
-                                <img src="svg/Create.svg" alt="Post button">
-                            </div>
-                            <div class="sb-hot">
-                                <div class="sb-hot-title">
-                                    <span>Hot n' fresh</span>
-                                    <img src="svg/Fire.svg" alt="Fire Symbol">
-                                </div>
-                                <div class="sb-hot-articles">
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sb-hot-more">
-                                    <div class="sb-hot-button">
-                                        <a href="index.html">MORE</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include 'sidebar.php'; ?>
                     </div>
                 </div>
             </main>

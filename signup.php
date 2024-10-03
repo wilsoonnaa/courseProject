@@ -1,9 +1,27 @@
 <?php
 session_start();
 
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    header("Location: index.php");
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
+    
+    // Check if email already exists
+    $users = file('users.txt', FILE_IGNORE_NEW_LINES);
+    foreach ($users as $user) {
+        $user_data = explode(':', $user);
+        if ($user_data[1] === $email) {
+            echo "<script>alert('Error: Email already registered. Please try again.');
+                window.location.href = 'signup.php?error=email_exists';</script>";
+            
+            exit();
+        }
+    }
+    
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     
     $user = "$username:$email:$password\n";
@@ -51,8 +69,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <label for="password">Password</label>
                                     <input type="password" id="password" name="password" placeholder="Your password" required>
                                 </div>
-                                <div>
+                                <div class="flex-backup">
                                     <button type="submit">SIGN UP</button>
+                                    <a href="login.php">Have an account? Log in!</a>
                                 </div>
                             </form>
                         </div>

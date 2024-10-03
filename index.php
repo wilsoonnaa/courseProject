@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-// Simple session check
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
-
 // Enable error reporting for debugging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -58,6 +52,9 @@ foreach ($posts as $post) {
             <main>
                 <div class="content">
                     <div class="info">
+                    <div class="breadcrumbs">
+                            <span>/ <a href="">Trending</a> /</span>
+                        </div>
                         <h1>LATEST ARTICLES</h1>
                     </div>
                     <div class="blocks">
@@ -83,28 +80,26 @@ foreach ($posts as $post) {
         </div>
     </a>
 <?php endforeach; ?>
-                        </div>
-                        <div class="sidebar hideOnMobile">
-                            <div class="sb-post">
-                                <span>POST</span>
-                                <img src="svg/Create.svg" alt="Post button">
-                            </div>
-                            <div class="sb-wiki">
-                                <div class="wiki-title">
-                                    <span>CATEGORIES</span>
-                                    <img src="svg/Create.svg" alt="Wiki icon">
+<a class="article-link" href="article.php">
+                            <div class="article">
+                                <div class="article-text">
+                                    <div class="article-title">
+                                        No Longer Human
+                                    </div>
+                                    <div class="article-desc">
+                                        No longer human is a game for those who want to hack slash and fucking kill. Annhilate your enemies in brutal fashion with a killer soundtrack from machine girl and an indie game legend developer. Kill the world!
+                                    </div>
+                                    <div class="article-info">
+                                        <div class="article-date">OCTOBER 1, 2024</div>
+                                        <div class="article-author">Alex Wilson</div>
+                                    </div>
                                 </div>
-                                <div class="wiki-list">
-                                    <ul>
-                                        <li>Animation</li>
-                                        <li>Character</li>
-                                        <li>Concept</li>
-                                        <li>Environment</li>
-                                    </ul>
+                                <div class="article-img">
+                                    <img src="images/nolonger.png" alt="Article Cover">
                                 </div>
-                            </div>
-                            
+                            </div></a>
                         </div>
+                        <?php include 'indexsb.php'; ?>
                     </div>
                 </div>
             </main>

@@ -9,32 +9,15 @@
 </head>
 <body>
     <div id="container">
-        <nav>
-            <div class="nv-content">
-                <ul class="nv-sidebar">
-                    <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#">Post</a></li>
-                    <li><a href="#">Wiki</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Account</a></li>
-                </ul>
-                <ul>
-                    <li id="dt-logo" class="first"><a href="index.html" id="dt-logo">SCAR3D</a></li>
-                    <li class="hideOnMobile nav-pd"><a href="index.html">Trending</a></li>
-                    <li class="hideOnMobile"><a href="wiki.html">Wiki</a></li>
-                    <li class="hideOnMobile"><a href="contacts.html">FAQ</a></li>
-                    <li class="hideOnMobile"><a href="post.html">Post</a></li>
-                    <li class="hideOnMobile last"><a href="#"><img class="acc-icon" src="svg/Account.svg" alt="Account Icon"></a></li>
-                    <li class="menu-button last" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#00FFD1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
-            </div>
-        </nav>
+    <?php include 'navbar.php'; ?>
     
         <div class="scnd-container">
             <main>
                 <div class="content">
                     <div class="info">
-                    
+                        <div class="breadcrumbs">
+                            <span>/ <a href="index.php">Trending</a> / No Longer Human /</span>
+                        </div>
                         <h1>No Longer Human</h1>
                         <div class="subinfo">
                             <div class="subinfoauthor">
@@ -51,109 +34,33 @@
                                 <div class="thumbnail"><img src="images/nolongerhuman.jpg" alt="Post thumbnail"></div>
                                 <div class="post-text border-gradient border-gradient-purple only-bottom">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    I've always been intrigued by stories within a computer. Tron and Sword Art Online and Ready Player One are just some examples. So when I see a game like No longer human, it immediately intrigues me with its retro-futuristic visual style, complete with wireframes and vector lines. Billing itself as "the world's first fvck 'em up," I had to see No longer human for myself, and between a momentum that feels like a bullet train and combat breaking the sound barrier, No longer human is a game that cannot come soon enough.
                                     </p>
 
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    No longer human takes place in a dystopian future, where brain-computer interfaces have become so advanced that it is entirely possible to leave the physical world for the real world. Think Sword Art Online with the NerveGear helmets, except once you scan your brain into SAO, there is no going back. As a burnt-out vocaloid named Tsuosono, a popular singer that the world has conveniently decided to forge, revenge becomes the only option. Plunging into the digital abyss, platers become a digital warrior, hellbent on obliterating the digital world.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie eros id purus laoreet tincidunt. Sed interdum lacus orci, in euismod orci vulputate in. Etiam faucibus lorem malesuada nisi ullamcorper lobortis. Suspendisse ac metus a metus blandit gravida. Suspendisse maximus convallis nunc, ac consectetur urna vulputate eu. Aliquam vitae luctus mi. Sed vitae tellus et erat porttitor interdum. Cras in neque mattis tellus ultrices ornare at et magna. Integer quis tempus ante, non egestas felis. Donec iaculis condimentum justo, sit amet porttitor sem suscipit ac. Vestibulum eget lacus sed magna tincidunt viverra. Duis quis ipsum at erat dictum euismod. Suspendisse justo purus, posuere sit amet lectus ac, rhoncus consequat magna. Etiam accumsan, velit id maximus aliquam, tortor metus tincidunt nunc, sit amet mattis nunc elit sit amet odio. Nam lobortis est et lacus varius, ac tristique eros tincidunt. Curabitur mattis faucibus laoreet. 
+                                    No longer human is a game about destruction at the speed of the internet, and that path is bent on pure obliteration without a second fault. Seeking revenge, enemies stage in front, only to be felled by your laser scythe. The demo proved just that. 
+                                    </p>
+                                    <p>
+                                    From the beginning, glowing, wireframe enemies appear, and the moment-to-moment combat is fierce and unceasing. It is lightning fast and frenzied. Enemies come to try and harm the player and, in retaliation, are cut up faster than tilapia in a fish shop. Swinging the cyber scythe is brutal, swift, yet filled with just the right amount of weight and momentum where you gain the sensation that you are truly cutting through digitized foes. One button could dash through enemies while the other turns the scythe into a sniper rifle, giving me some RWBY vibes. But, within moments, No longer human really opened up. 
+                                    </p>
+                                    <p>
+                                    Two words describe No longer human: Controlled chaos. An aggressive thumping soundtrack beckons players to indulge in extreme digitized violence, smiting foes left and right. Visually, it feels like No longer human is truly set within the darkest of corners of a cyberverse. All that is there is a wireframe environment, enough to see enemies, the player, and part of the environment. Then, there are enemies. When the music and gameplay combine, it's an experience unlike any other.  In moments, there is no thought, only to fight and defeat enemies, run hard, and make the way to the next area. It is euphoric, eclectic, charged, and wildly energetic. No longer human is faster than any game I have ever played before but just slow enough to process what is going on. There were a few moments of quick platforming and choice-making, but the goal is to fight and fight hard, and that's where the game shines. The demo featured basic enemies with clubs and tougher enemies with blades. While not difficult, they came in droves. The levels also provided challenges themselves, with one moment having buzzsaws in the middle, making the experience a literal battle for survival. Beating the enemies into the saw did yield high points for those that were able to do so. All the while, I had to keep my multiplier up and build my temperature meter for special attacks. One attack cuts the screen literally in half to a delightful anime-inspired effect. 
                                     </p>
                                 </div>
                                 <div class="post-share">
-                                    <a href="#">SHARE THIS ARTICLE</a>
+                                    <a href="#" onclick="shareArticle(); return false;">SHARE THIS ARTICLE <img src="svg/Share.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="sidebar hideOnMobile">
-                            <div class="sb-hot">
-                                <div class="sb-hot-title">
-                                    <span>Hot n' fresh</span>
-                                    <img src="svg/Fire.svg" alt="Fire Symbol">
-                                </div>
-                                <div class="sb-hot-articles">
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sb-hot-article">
-                                        <div class="sb-hot-article-content">
-                                            <p>Blender Glass Shader</p>
-                                            <small>Alexander Wilson</small>
-                                        </div>
-                                        <div class="sb-hot-article-img">
-                                            <img src="images/nolongerhuman.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sb-hot-more">
-                                    <div class="sb-hot-button">
-                                        <a href="index.html">MORE</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include 'sidebar.php'; ?>
                     </div>
                 </div>
             </main>
         
-            <footer>
-                <div class="ft-container">
-                    <div class="ft-left">
-                        <div class="ft-left-up">
-                            <div class="ft-left-links">
-                                <ul>
-                                    <li><a href="contacts.html">CONTACTS & FAQ</a></li>
-                                    <li><a href="#">PRIVACY POLICY</a></li>
-                                    <li><a href="#">ACCOUNT SETTINGS</a></li>
-                                    <li><a href="post.html">POST</a></li>
-                                    <li><a href="wiki.html">WIKI</a></li>
-                                </ul>
-                            </div>
-                            <div class="ft-left-icons">
-                                <div class="social-icons">
-                                    <img src="images/Emailicon.png" alt="Email icon">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/wilsoonnaa/courseProject"><img src="images/GitHub (1).png" alt="Github icon"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ft-left-down">
-                            <span>COPYRIGHT ALEX WILSON<br>SCARED OF 3D.NET 2024</span>
-                        </div>
-                    </div>
-                    <div class="ft-right">
-                        <div class="ft-right-box">
-                            <span>SUBSCRIBE<br>TO<br>OUR<br>NEWSLETTER</span>
-                            <input type="email" id="email" pattern=".+@example\.com" placeholder="Enter your email" required />
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <?php include 'footer.php'; ?>
         </div>
     
     </div>

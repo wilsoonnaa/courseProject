@@ -43,14 +43,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form action="/login.php" method="POST" class="passwordForm" id="loginForm">
                                 <div>
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="test@mail.ru" required>
+                                    <input type="email" id="email" name="email" placeholder="test@mail.ru" value="test@mail.ru" required>
                                 </div>
                                 <div>
                                     <label for="password">Password</label>
-                                    <input type="password" id="password" name="password" placeholder="Your password" required>
+                                    <input type="password" id="password" name="password" placeholder="Your password" value="test" required>
                                 </div>
-                                <div>
+                                <div class="flex-backup">
                                     <button type="submit">Log In</button>
+                                    <a href="forgot.php">Forgot password?</a>
+                                    <a href="signup.php">No account? Sign up!</a>
                                 </div>
                             </form>
                         </div>

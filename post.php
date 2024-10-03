@@ -78,6 +78,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Sorry, there was an error uploading your file.";
         }
     }
+
+    if (file_put_contents('posts.json', json_encode($posts, JSON_PRETTY_PRINT)) === false) {
+        echo "Error writing to posts.json";
+    } else {
+        // Redirect to index.php after successful submission
+        header("Location: index.php");
+        exit();
+    }
 }
 ?>
 
@@ -98,12 +106,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <main>
                 <div class="content">
                     <div class="info">
+                    <div class="breadcrumbs">
+                            <span>/ <a href="post.php">Post</a> /</span>
+                        </div>
                         <h1>WRITE A POST</h1>
                     </div>
                     <div class="blocks">
                         <div class="article2 border-gradient border-gradient-purple only-bottom">
                                 <form id="articleForm" method="POST" enctype="multipart/form-data">
-                                    <input type="text" id="articleTitle" name="articleTitle" placeholder="Article Name" required>
+                                    <input type="text" id="articleTitle" name="articleTitle" maxlength="40" placeholder="Article Name" required>
                                 <br>
                                 <div id="inputArea">
                                     <textarea id="articleDescription" name="articleDescription" rows="3" maxlength="300" placeholder="Write the article description here:" required></textarea>
